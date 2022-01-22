@@ -7,7 +7,7 @@ body {
 textarea {
     padding: 10px;
     font-family: 'Roboto', sans-serif;
-    resize: none;
+    /* resize: none; */
     border-radius: 20px;
     letter-spacing: 1px;
     max-width: 100%;
@@ -27,6 +27,10 @@ button {
 
 #box-output h1 {
     padding-bottom: 38px;
+}
+
+#text-output {
+    margin-top: 31px;
 }
 
 .title {

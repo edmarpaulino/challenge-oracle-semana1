@@ -1,35 +1,10 @@
-function verificaA(mensagem, i) {
-	return (mensagem[i] === 'a' &&
-			mensagem[i + 1] === 'i');
-}
-
-function verificaE(mensagem, i) {
-	return (mensagem[i] === 'e' &&
-			mensagem[i + 1] === 'n' &&
-			mensagem[i + 2] === 't' &&
-			mensagem[i + 3] === 'e' &&
-			mensagem[i + 4] === 'r');
-}
-
-function verificaI(mensagem, i) {
-	return (mensagem[i] === 'i' &&
-			mensagem[i + 1] === 'm' &&
-			mensagem[i + 2] === 'e' &&
-			mensagem[i + 3] === 's');
-}
-
-function verificaO(mensagem, i) {
-	return (mensagem[i] === 'o' &&
-			mensagem[i + 1] === 'b' &&
-			mensagem[i + 2] === 'e' &&
-			mensagem[i + 3] === 'r');
-}
-
-function verificaU(mensagem, i) {
-	return (mensagem[i] === 'u' &&
-			mensagem[i + 1] === 'f' &&
-			mensagem[i + 2] === 'a' &&
-			mensagem[i + 3] === 't');
+function verificaCifra(mensagem, i, cifra) {
+	for(let j = 0; j < cifra.length; j++) {
+		if (mensagem[i + j] !== cifra[j]) {
+			return false;
+		}
+	}
+	return true;
 }
 
 function descriptografarMensagem() {
@@ -38,19 +13,19 @@ function descriptografarMensagem() {
 	let output = document.querySelector("#text-output");
 
 	for(let i = 0; i < mensagem.length; i++) {
-		if (verificaA(mensagem, i)) {
+		if (verificaCifra(mensagem, i, 'ai')) {
 			mensagemDescriptografada += mensagem[i];
 			i += 1;
-		} else if (verificaE(mensagem, i)) {
+		} else if (verificaCifra(mensagem, i, 'enter')) {
 			mensagemDescriptografada += mensagem[i];
 			i += 4;
-		} else if (verificaI(mensagem, i)) {
+		} else if (verificaCifra(mensagem, i, 'imes')) {
 			mensagemDescriptografada += mensagem[i];
 			i += 3;
-		} else if (verificaO(mensagem, i)) {
+		} else if (verificaCifra(mensagem, i, 'ober')) {
 			mensagemDescriptografada += mensagem[i];
 			i += 3;
-		} else if (verificaU(mensagem, i)) {
+		} else if (verificaCifra(mensagem, i, 'ufat')) {
 			mensagemDescriptografada += mensagem[i];
 			i += 3;
 		} else {
