@@ -5,12 +5,12 @@ body {
 }
 
 textarea {
-    padding: 10px;
     font-family: 'Roboto', sans-serif;
-    /* resize: none; */
+    margin-top: 10px;
+    padding: 10px 0px 0px 10px;
+    width: 90%;
     border-radius: 20px;
     letter-spacing: 1px;
-    max-width: 100%;
     box-shadow: 2px 2px 2px #999;
 }
 
@@ -29,10 +29,6 @@ button {
     padding-bottom: 38px;
 }
 
-#text-output {
-    margin-top: 31px;
-}
-
 .title {
     text-align: center;
     font-size: 50px;
@@ -46,11 +42,18 @@ button {
     height: 400px;
 }
 
+.message {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .boxes {
     display: block;
     width: 400px;
     height: 300px;
-    padding: 0px 10px;
+    padding: 10px 10px;
     text-align: center;
     background: #121214;
     border-radius: 30px;
