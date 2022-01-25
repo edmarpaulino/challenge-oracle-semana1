@@ -59,9 +59,7 @@ textarea {
 }
 
 .button:hover {
-	border: 2px solid #029645;
-	background-color: #ffffff;
-	font-weight: bold;
+	background-color: #00a048;
 }
 
 #box-output h1 {
