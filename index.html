@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Decodificador de Texto</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Decodificador de Texto</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1 class="title">Decodificador</h1>
-    <div class="box">
-        <div id="input-box" class="boxes">
-            <div class="message">
-                <h2>Apenas letras minúsculas e sem acento</h2>
-            </div>
-            <div>
-                <textarea id="text-input" cols="40" rows="5" placeholder="Insira o texto aqui"></textarea>
-            </div>
-            <div class="box-button">
-                <button id="cripto">Criptografar</button>
-                <button id="descripto">Descriptografar</button>
-            </div>
-        </div>
-        <div id="output-box" class="boxes">
-            <div class="message">
-                <h2>Mensagem criptografada</h2>
-            </div>
-            <div>
-                <textarea id="text-output" cols="40" rows="5" placeholder="Insira o texto aqui"></textarea>
-            </div>
-            <div class="box-button">
-                <button>Copiar</button>
-            </div>
-        </div>
-    </div>
-    <script src="js/criptografar-mensagem.js"></script>
-    <script src="js/descriptografar-mensagem.js"></script>
-    <script src="js/principal.js"></script>
+	<h1 class="title">Decodificador</h1>
+	<div class="box">
+		<div id="input-box" class="boxes">
+			<div class="message">
+				<h2>Apenas letras minúsculas e sem acento</h2>
+			</div>
+			<div>
+				<textarea id="text-input" cols="40" rows="5" placeholder="Insira o texto aqui"></textarea>
+			</div>
+			<div class="box-button">
+				<button id="cripto" class="button">Criptografar</button>
+				<button id="descripto" class="button">Descriptografar</button>
+			</div>
+		</div>
+		<div id="output-box" class="boxes">
+			<div class="message">
+				<h2>Mensagem criptografada</h2>
+			</div>
+			<div>
+				<textarea id="text-output" cols="40" rows="5" readonly></textarea>
+			</div>
+			<div class="box-button">
+				<button id="copy" class="button">Copiar</button>
+			</div>
+		</div>
+	</div>
+	<script src="js/criptografar-mensagem.js"></script>
+	<script src="js/descriptografar-mensagem.js"></script>
+	<script src="js/principal.js"></script>
 </body>
+
 </html>

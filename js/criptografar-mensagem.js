@@ -4,9 +4,7 @@ function verificarCaracter(caracter) {
 
 function verificarEntrada(mensagem) {
 	for(let i = 0; i < mensagem.length; i++) {
-		if (!verificarCaracter(mensagem.charCodeAt(i))) {
-			return false;
-		}
+		if (!verificarCaracter(mensagem.charCodeAt(i))) return false;
 	}
 	return true;
 }

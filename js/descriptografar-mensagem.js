@@ -10,6 +10,10 @@ function verificaCifra(mensagem, i, cifra) {
 function descriptografarMensagem() {
 	let mensagemDescriptografada = "";
 	let mensagem = document.querySelector("#text-input").value;
+	if (!verificarEntrada(mensagem)) {
+		alert('Apenas letras minúsculas e sem acento')
+		return ;
+	}
 	let output = document.querySelector("#text-output");
 
 	for(let i = 0; i < mensagem.length; i++) {

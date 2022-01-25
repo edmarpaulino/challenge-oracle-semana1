@@ -1,63 +1,69 @@
 body {
-    background-color: #121214;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-}
-
-textarea {
-    font-family: 'Roboto', sans-serif;
-    margin-top: 10px;
-    padding: 10px 0px 0px 10px;
-    width: 90%;
-    border-radius: 20px;
-    letter-spacing: 1px;
-    box-shadow: 2px 2px 2px #999;
-}
-
-button {
-    background-color: #04d361;
-    color: #0f3924;
-    padding: 10px;
-    text-align: center;
-    border: none;
-    margin: 20px 10px;
-    font-size: 20px;
-    border-radius: 8px;
-}
-
-#box-output h1 {
-    padding-bottom: 38px;
+	background-color: #121214;
+	font-family: 'Roboto', sans-serif;
+	color: white;
 }
 
 .title {
-    text-align: center;
-    font-size: 50px;
+	text-align: center;
+	font-size: 50px;
 }
 
 .box {
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    width: 900px;
-    height: 400px;
-}
-
-.message {
-    height: 65px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	width: 900px;
+	height: 400px;
 }
 
 .boxes {
-    display: block;
-    width: 400px;
-    height: 300px;
-    padding: 10px 10px;
-    text-align: center;
-    background: #121214;
-    border-radius: 30px;
-    color: white;
-    border-style: solid;
-    border-color: #04d361;
+	display: block;
+	width: 400px;
+	height: 300px;
+	padding: 10px 10px;
+	text-align: center;
+	background: #121214;
+	border-radius: 30px;
+	color: white;
+	border-style: solid;
+	border-color: #04d361;
+}
+
+.message {
+	height: 65px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+textarea {
+	font-family: 'Roboto', sans-serif;
+	margin-top: 10px;
+	padding: 10px 0px 0px 10px;
+	width: 90%;
+	border-radius: 20px;
+	letter-spacing: 1px;
+	box-shadow: 2px 2px 2px #999;
+}
+
+.button {
+	background-color: #04d361;
+	color: #0f3924;
+	padding: 10px;
+	text-align: center;
+	border: none;
+	margin: 20px 10px;
+	font-size: 20px;
+	border-radius: 8px;
+}
+
+.button:hover {
+	border: 2px solid #029645;
+	background-color: #ffffff;
+	font-weight: bold;
+}
+
+#box-output h1 {
+	padding-bottom: 38px;
 }
